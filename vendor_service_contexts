@@ -1,3 +1,6 @@
+#line 1 "vendor/xiaomi/proprietary/misight/aidl/impl/sepolicy/common/service_contexts"
+vendor.xiaomi.hardware.misight.IMiSight/default       u:object_r:hal_misight_service:s0
+vendor.xiaomi.hardware.misight.ILogMgr/default        u:object_r:hal_misight_service:s0
 #line 1 "device/qcom/sepolicy_vndr/generic/vendor/common/service_contexts"
 # Copyright (c) 2021, The Linux Foundation. All rights reserved.
 #
@@ -25,6 +28,11 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# Changes from Qualcomm Innovation Center are provided under the following license:
+#
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
 
 android.hardware.neuralnetworks.IDevice/qti-default                   u:object_r:hal_neuralnetworks_service:s0
 android.hardware.neuralnetworks.IDevice/qti-gpu                       u:object_r:hal_neuralnetworks_service:s0
@@ -45,6 +53,7 @@ android.hardware.camera.provider.ICameraProvider/vendor_qti/0         u:object_r
 #Refer to b/236750094
 android.hardware.drm.IDrmFactory/widevine                             u:object_r:hal_drm_service:s0
 vendor.qti.hardware.wifi.supplicant.ISupplicantVendor/default         u:object_r:hal_wifi_supplicant_service:s0
+vendor.qti.ims.datachannelservice.IDataChannelService/default         u:object_r:vendor_hal_imsdc_service:s0
 #line 1 "device/qcom/sepolicy_vndr/qva/vendor/common/service_contexts"
 # Copyright (c) 2021, The Linux Foundation. All rights reserved.
 #
@@ -121,18 +130,26 @@ android.hardware.security.keymint.IKeyMintDevice/strongbox                u:obje
 android.hardware.security.sharedsecret.ISharedSecret/strongbox            u:object_r:hal_sharedsecret_service:s0
 android.hardware.security.keymint.IRemotelyProvisionedComponent/strongbox u:object_r:hal_keymint_service:s0
 vendor.qti.gnss.ILocAidlGnss/default                   u:object_r:hal_gnss_service:s0
-#line 1 "device/xiaomi/sepolicy_vndr/generic/vendor/common/service_contexts"
+vendor.qti.qhcp.IQHDC/default                          u:object_r:vendor_hal_qms_service:s0
+
+#line 1 "device/xiaomi/sepolicy_vndr/common/service_contexts"
 # add mi_nfc as nfc service
 mi_nfc                u:object_r:nfc_service:s0
+
+#aon
+vendor.xiaomi.hardware.aon.IAlwaysOn/miaonservicehal           u:object_r:hal_camera_aon_service:s0
+#line 1 "vendor/xiaomi/proprietary/miriskmanager/impl/sepolicy/service_contexts"
+vendor.xiaomi.hardware.mrm.IMrm/default            u:object_r:hal_mrm_service:s0
+vendor.xiaomi.hardware.mrm.IMiCertificate/default  u:object_r:hal_mrm_service:s0
+vendor.xiaomi.hardware.mrm.IMrmRemoteAuth/default  u:object_r:hal_mrm_service:s0
 #line 1 "vendor/xiaomi/proprietary/mifingerprint/sepolicy/sepolicy-8550t/service_contexts"
 com.goodix.FingerprintService                  u:object_r:goodix_fingerprint_service:s0
 #line 1 "vendor/xiaomi/proprietary/mm-vibrator/configs/common/sepolicy/service_contexts"
 android.hardware.vibrator.IVibrator/vibratorfeature                          u:object_r:hal_vibrator_service:s0
 #line 1 "vendor/xiaomi/proprietary/slm/sepolicy/service_contexts"
 sla_management                                       u:object_r:sla_service:s0
-#line 1 "vendor/xiaomi/proprietary/misight/aidl/impl/sepolicy/service_contexts"
-vendor.xiaomi.hardware.misight.IMiSight/default       u:object_r:hal_misight_service:s0
-vendor.xiaomi.hardware.misight.ILogMgr/default        u:object_r:hal_misight_service:s0
+#line 1 "vendor/xiaomi/proprietary/minidump/aidl/impl/sepolicy/service_contexts"
+vendor.xiaomi.hardware.blackbox.IBlackboxImpl/default       u:object_r:hal_blackboximpl_service:s0
 #line 1 "system/sepolicy/reqd_mask/service_contexts"
 # empty service_contexts file - this file is used to generate an empty
 # non-platform service_context for devices without any service_contexts

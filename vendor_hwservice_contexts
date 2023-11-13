@@ -108,15 +108,15 @@ vendor.qti.hardware.dpmservice::IDpmService                  u:object_r:vendor_h
 vendor.qti.hardware.wifi.wificfr::IWificfr                   u:object_r:hal_wificfr_hwservice:s0
 vendor.qti.hardware.display.demura::IDemuraFileFinder           u:object_r:vendor_hal_display_demura_hwservice:s0
 vendor.xiaomi.hardware.bgservice::IBGService                 u:object_r:vendor_hal_camerapostproc_xiaomi_hwservice:s0
+vendor.rongcard.hardware.eid::IEidDevice                     u:object_r:vendor_hal_eid_hwservice:s0
 vendor.xiaomi.hardware.miface::IMiFace  u:object_r:hal_miface_hwservice:s0
-vendor.xiaomi.hardware.miriskmanager::IMiRiskManager    u:object_r:hal_miriskmanager_hwservice:s0
+vendor.xiaomi.hardware.mrm::IMrm    u:object_r:hal_mrm_hwservice:s0
 vendor.xiaomi.hardware.mfidoca::IFidoService       u:object_r:hal_mfidoca_hwservice:s0
 vendor.xiaomi.hardware.mlipay::IMlipayService       u:object_r:hal_mlipay_hwservice:s0
 vendor.xiaomi.hardware.mtdservice::IMTService       u:object_r:hal_mtdservice_hwservice:s0
 vendor.xiaomi.hardware.tidaservice::ITidaService       u:object_r:hal_tidaservice_hwservice:s0
 vendor.xiaomi.hardware.vsimapp::IVSIMService       u:object_r:hal_vsimapp_hwservice:s0
 vendor.xiaomi.hardware.otrpagent::IOTrPAgent        u:object_r:hal_otrpagent_hwservice:s0
-vendor.rongcard.hardware.eid::IEidDevice                                u:object_r:vendor_hal_eid_hwservice:s0
 vendor.xiaomi.cit.bluetooth::IBluetoothService  u:object_r:hal_cit_bluetooth_hwservice:s0
 vendor.xiaomi.cit.wifi::IWifiService  u:object_r:hal_cit_wifi_hwservice:s0
 vendor.xiaomi.sensor.citsensorservice::ICitSensorService   u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
@@ -140,4 +140,5 @@ vendor.xiaomi.hardware.mimd::IMimd   u:object_r:hal_mimd_hwservice:s0
 vendor.xiaomi.hardware.misys::IMiSys       u:object_r:hal_misys_hwservice:s0
 vendor.xiaomi.hardware.miperf::IMiPerf       u:object_r:hal_miperf_hwservice:s0
 vendor.xiaomi.hardware.fbo::IFbo   u:object_r:hal_fbo_hwservice:s0
+vendor.xiaomi.hardware.swap::ISwap   u:object_r:hal_swap_hwservice:s0
 vendor.xiaomi.hardware.cld::ICld   u:object_r:hal_cld_hwservice:s0
